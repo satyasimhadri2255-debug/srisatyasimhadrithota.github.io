@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Sri Satya Simhadri Thota | DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -13,40 +14,51 @@
       line-height: 1.6;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
     header {
       background: #0f172a;
       color: #fff;
-      padding: 30px 20px;
       text-align: center;
+      padding: 40px 20px;
     }
     header img {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 15px;
       border: 3px solid #fff;
+      margin-bottom: 15px;
     }
-    h1 {
-      margin-bottom: 5px;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #93c5fd;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #2563eb;
     }
     h2 {
       color: #0f172a;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 5px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .section {
       margin-top: 20px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    .tag {
+    .tags span {
       display: inline-block;
       background: #e5e7eb;
       padding: 5px 10px;
@@ -54,43 +66,58 @@
       border-radius: 5px;
       font-size: 14px;
     }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
     footer {
       text-align: center;
-      margin-top: 40px;
       padding: 20px;
       font-size: 14px;
       color: #666;
+      margin-top: 40px;
     }
-    a {
-      color: #2563eb;
+    .resume-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #2563eb;
+      color: #fff;
+      border-radius: 5px;
       text-decoration: none;
+      transition: background 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+    .resume-btn:hover {
+      background: #1e40af;
+    }
+    @media(max-width: 600px) {
+      .tags span {
+        font-size: 12px;
+        padding: 4px 8px;
+      }
     }
   </style>
 </head>
-
 <body>
 
 <header>
-  <!-- Profile picture: replace "profile.jpg" with your actual image file -->
   <img src="profile.jpg" alt="Sri Satya Simhadri Thota">
-
   <h1>Sri Satya Simhadri Thota</h1>
   <p>DevOps Engineer | Multi-Cloud | CI/CD | Automation</p>
-  <p>
-    Connecticut · 
-    <a href="mailto:srisatyasimhadrithota55@gmail.com" style="color:#93c5fd;">Email</a> ·
-    <a href="https://www.linkedin.com/in/sri-satya-simhadri-thota-45505b179"
-       target="_blank"
-       rel="noopener noreferrer"
-       style="color:#93c5fd;">LinkedIn</a> ·
-    <a href="https://github.com/satyasimhadri2255-debug"
-       target="_blank"
-       rel="noopener noreferrer"
-       style="color:#93c5fd;">GitHub</a>
-  </p>
+  <div class="social-links">
+    <a href="mailto:srisatyasimhadrithota55@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/sri-satya-simhadri-thota-45505b179" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/satyasimhadri2255-debug" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  </div>
+  <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
 </header>
 
 <div class="container">
@@ -98,81 +125,98 @@
   <section class="section">
     <h2>About Me</h2>
     <p>
-      DevOps Engineer with 5+ years of experience designing, automating, and 
-      optimizing cloud infrastructure across AWS, Azure, and GCP. 
-      Strong background in CI/CD pipelines, Infrastructure as Code, containerization,
-      and observability in enterprise and regulated environments.
+      DevOps Engineer with <strong>5 years of experience</strong> designing, automating, and optimizing cloud infrastructures across <strong>AWS, Azure, and GCP</strong>.  
+      Expert in CI/CD pipelines, Infrastructure as Code (Terraform, Ansible), containerization (Docker, Kubernetes), and observability (Prometheus, Grafana, ELK Stack).  
+      Experienced in delivering secure, compliant, and automated multi-cloud solutions.
     </p>
   </section>
 
   <section class="section">
     <h2>Technical Skills</h2>
-    <div>
-      <span class="tag">AWS</span>
-      <span class="tag">Azure</span>
-      <span class="tag">GCP</span>
-      <span class="tag">Docker</span>
-      <span class="tag">Kubernetes</span>
-      <span class="tag">Terraform</span>
-      <span class="tag">Ansible</span>
-      <span class="tag">GitHub Actions</span>
-      <span class="tag">GitLab CI</span>
-      <span class="tag">Jenkins</span>
-      <span class="tag">Prometheus</span>
-      <span class="tag">Grafana</span>
-      <span class="tag">ELK Stack</span>
-      <span class="tag">Python</span>
-      <span class="tag">Bash</span>
+    <div class="tags">
+      <span>AWS</span>
+      <span>Azure</span>
+      <span>GCP</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>Terraform</span>
+      <span>Ansible</span>
+      <span>GitHub Actions</span>
+      <span>GitLab CI</span>
+      <span>Jenkins</span>
+      <span>Prometheus</span>
+      <span>Grafana</span>
+      <span>ELK Stack</span>
+      <span>Python</span>
+      <span>Bash</span>
+      <span>Linux</span>
+      <span>MySQL</span>
+      <span>PostgreSQL</span>
+      <span>Redis</span>
+      <span>CI/CD</span>
+      <span>GitOps</span>
     </div>
   </section>
 
   <section class="section">
     <h2>Experience</h2>
 
-    <h3>DevOps Engineer — CVS Health</h3>
-    <p><i>October 2025 – Present</i></p>
-    <ul>
-      <li>Modernizing CI/CD pipelines for digital healthcare platforms</li>
-      <li>Implemented GitHub Actions and GitLab CI with security scans</li>
-      <li>Reduced deployment errors by 60% using Terraform and GitOps</li>
-      <li>Improved observability with Prometheus, Grafana, and OpenTelemetry</li>
-    </ul>
+    <div class="card">
+      <h3>DevOps Engineer — CVS Health</h3>
+      <p><i>October 2025 – Present</i></p>
+      <ul>
+        <li>Modernized CI/CD pipelines for digital healthcare platforms in a HIPAA-compliant multi-cloud environment</li>
+        <li>Integrated security scanning and policy-as-code, reducing deployment errors by 60%</li>
+        <li>Embedded Terraform & GitOps (Argo CD) workflows for automated deployments</li>
+        <li>Enhanced observability using Prometheus, Grafana, and OpenTelemetry</li>
+        <li>Optimized release cycles from weeks to hours</li>
+      </ul>
+    </div>
 
-    <h3>DevOps Engineer — Dell Technologies</h3>
-    <p><i>June 2019 – December 2023</i></p>
-    <ul>
-      <li>Migrated 300+ servers to hybrid Azure cloud</li>
-      <li>Reduced provisioning time by 45% using Terraform</li>
-      <li>Built centralized monitoring with ELK, Prometheus, Grafana</li>
-      <li>Achieved 25% cloud cost reduction through automation</li>
-    </ul>
+    <div class="card">
+      <h3>DevOps Engineer — Dell Technologies</h3>
+      <p><i>June 2019 – December 2023</i></p>
+      <ul>
+        <li>Migrated 300+ legacy servers to a hybrid cloud ecosystem across Azure & AWS</li>
+        <li>Automated infrastructure provisioning using Terraform, reducing setup time by 45%</li>
+        <li>Containerized applications with Docker to improve portability and maintainability</li>
+        <li>Established centralized monitoring and logging with ELK, Prometheus, Grafana</li>
+        <li>Automated scaling and cost monitoring, achieving 25% monthly savings</li>
+      </ul>
+    </div>
   </section>
 
   <section class="section">
     <h2>Projects</h2>
 
-    <h3>Cloud-Based Data Analytics Pipeline</h3>
-    <ul>
-      <li>Built automated ETL pipeline using AWS S3 and Python</li>
-      <li>Processed structured datasets using Pandas and Boto3</li>
-      <li>Created dashboards using Tableau</li>
-    </ul>
+    <div class="card">
+      <h3>Cloud-Based Data Analytics Pipeline</h3>
+      <ul>
+        <li>Built automated ETL pipeline using AWS S3, Python (Pandas, Boto3)</li>
+        <li>Processed structured datasets and created dashboards using Tableau</li>
+        <li>Implemented scalable, serverless cloud analytics architecture</li>
+      </ul>
+    </div>
 
-    <h3>Automated CI Pipeline for Web Application Testing</h3>
-    <ul>
-      <li>Developed CI pipeline using Selenium and Docker</li>
-      <li>Integrated static code analysis and automated testing</li>
-      <li>Simulated real-world CI/CD workflows</li>
-    </ul>
+    <div class="card">
+      <h3>Automated CI Pipeline for Web Application Testing</h3>
+      <ul>
+        <li>Developed CI/CD pipeline using Selenium, Docker, and GitHub Actions</li>
+        <li>Integrated static code analysis and automated testing</li>
+        <li>Simulated enterprise-level CI/CD workflows for demonstration</li>
+      </ul>
+    </div>
   </section>
 
   <section class="section">
     <h2>Education</h2>
-    <p>
-      <strong>Master of Information Technology Management</strong><br>
-      St. Francis College, Brooklyn, NY<br>
-      GPA: 3.8
-    </p>
+    <div class="card">
+      <p>
+        <strong>Master of Information Technology Management</strong><br>
+        St. Francis College, Brooklyn, NY<br>
+        GPA: 3.8
+      </p>
+    </div>
   </section>
 
 </div>
